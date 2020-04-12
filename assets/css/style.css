@@ -602,13 +602,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: .5s;
 }
 
-/* Services Section
+/* Museums Section
 --------------------------------*/
-#services {
+#museums {
   padding: 60px 0 40px 0;
 }
 
-#services .box {
+#museums .box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -620,11 +620,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#services .box:hover {
+#museums .box:hover {
   transform: scale(1.1);
 }
 
-#services .icon {
+#museums .icon {
   margin: 0 auto 15px auto;
   padding-top: 12px;
   display: inline-block;
@@ -634,26 +634,26 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
 }
 
-#services .icon i {
+#museums .icon i {
   font-size: 36px;
   line-height: 1;
 }
 
-#services .title {
+#museums .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-#services .title a {
+#museums .title a {
   color: #111;
 }
 
-#services .box:hover .title a {
+#museums .box:hover .title a {
   color: #1bb1dc;
 }
 
-#services .description {
+#museums .description {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
@@ -773,7 +773,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 
-/* Portfolio Section
+/* portfolio Section
 --------------------------------*/
 #portfolio {
   padding: 60px 0;
@@ -974,6 +974,78 @@ h1, h2, h3, h4, h5, h6 {
 
 #testimonials .owl-dot.active {
   background-color: #1bb1dc;
+}
+
+/* Podcast Section
+--------------------------------*/
+#podcast {
+  padding: 60px 0;
+}
+
+#podcast .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#podcast .member .member-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+  padding: 15px 0;
+  background: rgba(29, 28, 41, 0.6);
+}
+
+#podcast .member .member-info-content {
+  transition: margin 0.2s;
+  height: 40px;
+  transition: height 0.4s;
+}
+
+#podcast .member:hover .member-info {
+  transition: 0.4s;
+}
+
+#podcast .member:hover .member-info-content {
+  height: 80px;
+}
+
+#podcast .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#podcast .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#podcast .member .social {
+  margin-top: 15px;
+}
+
+#podcast .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#podcast .member .social a:hover {
+  color: #1bb1dc;
+}
+
+#podcast .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
 }
 
 /* Team Section
