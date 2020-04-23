@@ -1337,7 +1337,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 60px 0 80px 0;
   background: #f5f8fd;
 }
 
@@ -1366,17 +1366,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 50px;
   display: inline-block;
   background: #1bb1dc;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  padding: 25px 0;
+  margin-right: 40px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 100px;
+  height: 100px;
   transition: 0.3s;
 }
 
