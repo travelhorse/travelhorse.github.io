@@ -490,6 +490,93 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Hero2 Section
+--------------------------------------------------------------*/
+#hero2 {
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  #hero2 {
+    height: auto;
+    padding: 30px 0 60px 0;
+  }
+  #hero2 .container {
+    height: auto !important;
+  }
+  #hero2 .intro-img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero2 {
+    height: auto;
+    padding: 30px 0 60px 0;
+  }
+  #hero2 .container {
+    height: auto !important;
+  }
+  #hero2 .intro-img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  #hero2 .intro-info {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero2 .intro-info {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
+#hero2 .intro-info h2 {
+  color: #413e66;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero2 .intro-info h2 span {
+  color: #1bb1dc;
+}
+
+@media (max-width: 767px) {
+  #hero2 .intro-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+
+#hero2 .intro-info .btn-get-started, #hero2 .intro-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+  color: #fff;
+}
+
+#hero2 .intro-info .btn-get-started:hover, #hero2 .intro-info .btn-services:hover {
+  background: #0a98c0;
+}
+
+/*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 /* Sections Header
@@ -514,6 +601,35 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767px) {
   .section-header p {
+    width: 100%;
+  }
+}
+
+/* Sections Header2
+--------------------------------*/
+.section-header2 h3 {
+  font-size: 36px;
+  color: #413e66;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  width: 70%;
+  padding-bottom: 40px;
+}
+
+.section-header2 p {
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+  padding-bottom: 60px;
+  color: #535074;
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .section-header2 p {
     width: 100%;
   }
 }
