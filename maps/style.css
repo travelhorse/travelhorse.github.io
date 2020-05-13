@@ -1,0 +1,26 @@
+	   /* Set the size of the div element that contains the map */
+       #map {
+		height: 92vh;  /* The height is 400 pixels */
+		width: 100%;  /* The width is the width of the web page */
+	   }
+
+	   .floating-panel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 5;
+		background-color: #fff;
+		padding: 0;
+		border: 1px solid #999;
+		text-align: left;
+		font-family: 'Roboto','sans-serif';
+		width: 15rem;
+		padding-left: 0;
+		margin-top:0;
+		   }
+		   
+		.panel-text {
+			display:inline;
+		}
+
+
