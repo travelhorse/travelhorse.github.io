@@ -605,6 +605,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.connect {
+  font-size: 28px;
+  color: #413e66;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 30px;
+}
+
 /* Sections Header2
 --------------------------------*/
 .section-header2 h3 {
@@ -622,7 +632,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-header2 p {
   text-align: center;
   margin: auto;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 60px;
   color: #535074;
   width: 70%;
@@ -1166,6 +1176,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Team Section
 --------------------------------*/
+
 #team {
   padding: 60px 0;
 }
@@ -1235,6 +1246,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   margin: 0 2px;
 }
+
+
 
 /* Clients Section
 --------------------------------*/
@@ -1453,7 +1466,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top {
-  padding: 60px 0 80px 0;
+  padding: 50px 0 50px 0;
   background: #f5f8fd;
 }
 
@@ -1481,18 +1494,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #535074;
 }
 
+#footer .social-links {
+  justify-content: center; display: flex;
+}
+
+
 #footer .footer-top .social-links a {
-  font-size: 50px;
+  font-size: 30px;
   display: inline-block;
   background: #1bb1dc;
   color: #fff;
   line-height: 1;
-  padding: 25px 0;
+  padding: 15px 0;
   margin: 0 20px 0 20px;
   border-radius: 50%;
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   transition: 0.3s;
 }
 
