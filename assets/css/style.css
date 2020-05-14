@@ -590,6 +590,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+/* covid strip */
+.section-header h4 {
+  color: #fff;
+  font-size: 17px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
 .section-header p {
   text-align: center;
   margin: auto;
@@ -1454,6 +1465,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #faq #faq-list a.collapsed i::before {
   content: "\f2c7" !important;
+}
+
+
+/* Covid Strip
+--------------------------------*/
+#covid {
+  background-color: black;
+  margin-top: 65px;
 }
 
 /*--------------------------------------------------------------
