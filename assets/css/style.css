@@ -932,6 +932,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0;
 }
 
+#portfolio .portfolio-title {
+  text-align: center;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+}
+
 #portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
