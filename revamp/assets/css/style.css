@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   #hero {
     height: auto;
-    padding: 80px 0 60px 0;
+    padding: 80px 0 20px 0;
   }
   #hero .container {
     height: auto !important;
@@ -479,6 +479,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 32px;
+  margin: 10px 10px;
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
@@ -769,8 +770,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #museums .title {
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 25px;
+  font-size: 23px;
+  color: orange;
 }
 
 #museums .title a {
@@ -1610,7 +1612,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #0a98c0;
 }
 
-#footer .php-email-form .validate {
+#museums .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1618,7 +1620,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
 }
 
-#footer .php-email-form .error-message {
+#museums .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1627,7 +1629,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-#footer .php-email-form .sent-message {
+#museums .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1636,14 +1638,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-#footer .php-email-form .loading {
+#museums .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-#footer .php-email-form .loading:before {
+#museums .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1656,26 +1658,26 @@ h1, h2, h3, h4, h5, h6 {
   animation: animate-loading 1s linear infinite;
 }
 
-#footer .php-email-form input, #footer .php-email-form textarea {
+#museums .php-email-form input, #footer .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   border: 1px solid #dce1ec;
   font-size: 14px;
 }
 
-#footer .php-email-form input::focus, #footer .php-email-form textarea::focus {
+#museums .php-email-form input::focus, #footer .php-email-form textarea::focus {
   background-color: #1bb1dc;
 }
 
-#footer .php-email-form input {
+#museums .php-email-form input {
   padding: 20px 15px;
 }
 
-#footer .php-email-form textarea {
+#museums .php-email-form textarea {
   padding: 12px 15px;
 }
 
-#footer .php-email-form button[type="submit"] {
+#musuems .php-email-form button[type="submit"] {
   background: #1bb1dc;
   border: 0;
   border-radius: 3px;
@@ -1684,7 +1686,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#footer .php-email-form button[type="submit"]:hover {
+#museums .php-email-form button[type="submit"]:hover {
   background: #0a98c0;
   cursor: pointer;
 }
