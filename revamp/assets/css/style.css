@@ -747,13 +747,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: .5s;
 }
 
-/* Museums Section
+/* Museums / Logistics Section
 --------------------------------*/
-#museums {
+#museums , #logistics {
   padding: 60px 0;
 }
 
-#museums .box {
+#museums .box , #logistics .box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -765,11 +765,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#museums .box:hover {
+#museums .box:hover, #logistics .box:hover {
   transform: scale(1.1);
 }
 
-#museums .icon {
+#museums .icon, #logistics .icon {
   margin: 0 auto 15px auto;
   padding-top: 12px;
   display: inline-block;
@@ -779,27 +779,27 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
 }
 
-#museums .icon i {
+#museums .icon i , #logistics .icon i{
   font-size: 36px;
   line-height: 1;
 }
 
-#museums .title {
+#museums .title , #logistics .title{
   font-weight: 700;
   margin-bottom: 25px;
   font-size: 23px;
   color: #ed7c47;
 }
 
-#museums .title a {
+#museums .title a , #logistics .title a {
   color: #111;
 }
 
-#museums .box:hover .title a {
+#museums .box:hover .title a , #logistics .box:hover .title a {
   color: #1bb1dc;
 }
 
-#museums .description {
+#museums .description , #logistics .description{
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
