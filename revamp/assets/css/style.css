@@ -172,6 +172,22 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+/* .progress-container {
+  position:fixed;
+  width:100%;
+  margin-bottom: 50px;
+  height: 8px;
+  background: #ccc;
+} */
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  position: fixed;
+  height: 8px;
+  background:#ed7c47;
+  width: 0%;
+}
+
 @media (max-width: 991px) {
   #header {
     height: 70px;
@@ -202,9 +218,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  padding: 0;
+  padding: 15px 0;
   margin: 20px 0;
-  max-height: 50px;
+  max-height: 60px;
 }
 
 .main-pages {
