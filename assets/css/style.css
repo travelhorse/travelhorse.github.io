@@ -172,6 +172,22 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+/* .progress-container {
+  position:fixed;
+  width:100%;
+  margin-bottom: 50px;
+  height: 8px;
+  background: #ccc;
+} */
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  position: fixed;
+  height: 8px;
+  background:#ed7c47;
+  width: 0%;
+}
+
 @media (max-width: 991px) {
   #header {
     height: 70px;
@@ -202,9 +218,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  padding: 0;
+  padding: 15px 0;
   margin: 20px 0;
-  max-height: 50px;
+  max-height: 60px;
 }
 
 .main-pages {
@@ -429,13 +445,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   #hero {
     height: auto;
-    padding: 80px 0 60px 0;
+    padding: 80px 0 20px 0;
   }
   #hero .container {
     height: auto !important;
   }
   #hero .intro-img {
     width: 80%;
+    margin-top: 70px;
   }
 }
 
@@ -470,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#hero .intro-info .btn-get-started, #hero .intro-info .btn-services {
+#hero .intro-info .btn-get-started, #hero .intro-info .btn-services, #about .about-content .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -478,6 +495,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 32px;
+  margin: 10px 10px;
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
@@ -557,7 +575,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#hero2 .intro-info .btn-get-started, #hero2 .intro-info .btn-services {
+#hero2 .intro-info .btn-get-started, #hero2 .intro-info .btn-services, #about .about-content .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -607,7 +625,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .connect {
   font-size: 28px;
-  color: #413e66;
+  color: #fff;
   text-align: center;
   font-weight: 700;
   position: relative;
@@ -657,13 +675,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about .about-content {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 #about .about-content h2 {
   color: #413e66;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-style: italic;
 }
 
 #about .about-content h3 {
@@ -728,13 +747,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: .5s;
 }
 
-/* Museums Section
+/* Museums / Logistics Section
 --------------------------------*/
-#museums {
-  padding: 60px 0 40px 0;
+#museums , #logistics {
+  padding: 60px 0;
 }
 
-#museums .box {
+#museums .box , #logistics .box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -746,11 +765,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#museums .box:hover {
+#museums .box:hover, #logistics .box:hover {
   transform: scale(1.1);
 }
 
-#museums .icon {
+#museums .icon, #logistics .icon {
   margin: 0 auto 15px auto;
   padding-top: 12px;
   display: inline-block;
@@ -760,30 +779,31 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
 }
 
-#museums .icon i {
+#museums .icon i , #logistics .icon i{
   font-size: 36px;
   line-height: 1;
 }
 
-#museums .title {
+#museums .title , #logistics .title{
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 25px;
+  font-size: 23px;
+  color: #ed7c47;
 }
 
-#museums .title a {
+#museums .title a , #logistics .title a {
   color: #111;
 }
 
-#museums .box:hover .title a {
+#museums .box:hover .title a , #logistics .box:hover .title a {
   color: #1bb1dc;
 }
 
-#museums .description {
+#museums .description , #logistics .description{
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
-  text-align: left;
+  text-align: center;
 }
 
 /* Why Us Section
@@ -1476,12 +1496,12 @@ h1, h2, h3, h4, h5, h6 {
 #footer {
   padding: 0 0 30px 0;
   font-size: 14px;
-  background: #fff;
+  background: #2d2b46;
 }
 
 #footer .footer-top {
-  padding: 50px 0 50px 0;
-  background: #f5f8fd;
+  padding: 30px 0 0 0;
+  /* background: #f5f8fd; */
 }
 
 #footer .footer-top .footer-info {
@@ -1608,7 +1628,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #0a98c0;
 }
 
-#footer .php-email-form .validate {
+#museums .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1616,7 +1636,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
 }
 
-#footer .php-email-form .error-message {
+#museums .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1625,7 +1645,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-#footer .php-email-form .sent-message {
+#museums .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1634,14 +1654,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-#footer .php-email-form .loading {
+#museums .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-#footer .php-email-form .loading:before {
+#museums .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1654,26 +1674,26 @@ h1, h2, h3, h4, h5, h6 {
   animation: animate-loading 1s linear infinite;
 }
 
-#footer .php-email-form input, #footer .php-email-form textarea {
+#museums .php-email-form input, #footer .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   border: 1px solid #dce1ec;
   font-size: 14px;
 }
 
-#footer .php-email-form input::focus, #footer .php-email-form textarea::focus {
+#museums .php-email-form input::focus, #footer .php-email-form textarea::focus {
   background-color: #1bb1dc;
 }
 
-#footer .php-email-form input {
+#museums .php-email-form input {
   padding: 20px 15px;
 }
 
-#footer .php-email-form textarea {
+#museums .php-email-form textarea {
   padding: 12px 15px;
 }
 
-#footer .php-email-form button[type="submit"] {
+#musuems .php-email-form button[type="submit"] {
   background: #1bb1dc;
   border: 0;
   border-radius: 3px;
@@ -1682,7 +1702,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#footer .php-email-form button[type="submit"]:hover {
+#museums .php-email-form button[type="submit"]:hover {
   background: #0a98c0;
   cursor: pointer;
 }
