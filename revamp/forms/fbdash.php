@@ -22,7 +22,7 @@
   $contact->from_name = $_POST['name'];
   $contact->from_phone = $_POST['phone'];
   $contact->from_email = $_POST['email'];
-  $contact->subject = "Enquiry";
+  $contact->subject = $_POST['outlet'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
@@ -38,6 +38,8 @@
   $contact->add_phone = ( $_POST['phone]', 'Contact');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_outlet = ( $_POST['outlet'], 'Outlet');
-  $contact->add_comments = ( $_POST['message'], 'Message');
+  $contact->add_address = ($_POST['address'], 'Outlet Address');
+  $contact->add_dates = ( $_POST['dates'], 'Date and Time of Delivery');
+  $contact->add_comments = ( $_POST['message'], 'Additional Comments');
   echo $contact->send();
 ?>

@@ -69,11 +69,12 @@
 
             <nav class="main-nav float-right d-none d-lg-block">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="drop-down active"><a href="../index.html#logistics">Logistics</a>
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li class="drop-down"><a href="../index.html#museums">Logistics</a>
                         <ul>
-                            <li><a href="../logistics/index.html">F&B Delivery/Logistics/Storage</a></li>
-                            <li><a href="http://goodfortravel.co/home">Travelhorse Delivery Management</a></li>
+                            <li><a href="../logistics/index.html">F&B Dash</a></li>
+                            <li><a href="../logistics/index.html">Logistics Delivery</a></li>
+                            <li><a href="../logistics/index.html">Packing & Storage</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="../index.html#portfolio">Travel</a>
@@ -144,12 +145,15 @@
                             <h2></h2>
                             <h3>In light of the Covid-19, the team at Travelhorse believes in rallying local startups
                                 and SMEs to come together to service Singapore.</h3>
-                            <p>If you are a startup, a company or just an individual looking for an Island-wide
-                                delivery, packing or storage services, we are able to help. Click on the buttons to
-                                choose the service, submit your details in the Airtable form and we will get back to you
-                                within an hour.
-                                <br /><br />For urgent bookings, please contact us at hello@travelhorse.co
-                            </p>
+                                <p>If you are a startup, a company or just an individual looking for an Island-wide
+                                    delivery, packing or storage services, we are able to help.
+                                </p>
+                                <p>
+                                    If you require a one-time logistic solution, submit your details in the form below and we will get back to you within an hour.<br/>
+                                    If you wish to engage in our services, sign-up at our <a href="http://goodfortravel.co/home" target="_blank">Travelhorse Delivery Management</a> to be our partner merchant and enjoy special rates.
+                                </p>
+                                    For urgent bookings, please contact us at hello@travelhorse.co
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -168,53 +172,200 @@
 
                 <div class="row">
 
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
-                            <a href="https://airtable.com/shr7SLDRu2ANQjtSA" class="title" target="_blank">F&B Dash</a>
-                            <br>
-                            <h4 class="description">Island-wide delivery service for F&B stalls, restaurants or cafes to reach your customers.</h4>
+                            <h4 class="title">F&B Dash</h4>
+                            <div class="form">
+
+                                <p class = "form-title">Need to get your products to your customers island-wide?
+                                    <br/>We can help you!</p>
+
+                                <form action="../forms/fbdash.php" method="post" role="form" class="php-email-form">
+                                    <p class = "form-input-header">Name:</p>
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Contact:</p>
+                                    <div class="form-group">
+                                        <input type="tel" id="phone" name="phone" class="form-control" 
+                                        maxlength="8" placeholder="Your Contact Number"
+                                        data-msg="Please enter a valid number" 
+                                        required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Email:</p>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    </div>
+                                    <p class = "form-input-header">Outlet Name:</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="outlet" id="outlet"
+                                            placeholder="F&B Outlet" data-rule="minlen:2"
+                                            data-msg="Please enter your outlet name" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Address:</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="address" id="address"
+                                            placeholder="F&B Outlet Address" data-rule="minlen:2"
+                                            data-msg="Please enter your outlet address" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Delivery Dates & Timing:</p>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="dates" rows="5" placeholder="Single/Multiple dates and timings for Food Delivery services" required ></textarea>
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Others:</p>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="5" placeholder="Additional Comments/Remarks"></textarea>
+                                        <div class="validate"></div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you! We will get back to you soon.</div>
+                                    </div>
+
+                                    <div class="text-center"><button type="submit" class="form-btn" title="Send Message">Send Message</button></div>
+                                </form>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
-                            <a href="https://airtable.com/shrmz1CRYIYRRXqVa" class="title" target="_blank">Logistics Delivery</a>
-                            <br>
-                            <h4 class="description">Island-wide delivery service for startup, companies or individual looking for an your parcels, furniture.</h4>
+                            <h4 class="title">Packing & Storage</h4>
+                            <div class="form">
+
+                                <p class = "form-title">Need help packing and/or storing?
+                                    <br/>Let us know!</p>
+
+                                <form action="../forms/storage.php" method="post" role="form" class="php-email-form">
+                                    <p class = "form-input-header">Name:</p>
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Contact:</p>
+                                    <div class="form-group">
+                                        <input type="tel" id="phone" name="phone" class="form-control" 
+                                        maxlength="8" placeholder="Your Contact Number"
+                                        data-msg="Please enter a valid number" 
+                                        required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Email:</p>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    </div>
+                                    <p class = "form-input-header">Company/Shop (if applicaple):</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="outlet" id="outlet"
+                                            placeholder="Company/Shop Name" data-rule="minlen:2"
+                                            data-msg="Please enter your company/shop name"/>
+                                    </div>
+                                    <p class = "form-input-header">Address/Location:</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="address" id="address"
+                                            placeholder="Address" data-rule="minlen:2"
+                                            data-msg="Please enter the address" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Service:</p>
+                                    <div id = "service" class="radio">
+                                            <label class="form-input-radio"><input type="radio" name="serviceopt" checked> Packing Services</label><br/>
+                                            <label class="form-input-radio"><input type="radio" name="serviceopt"> Storage Service</label><br/>
+                                            <label class="form-input-radio"><input type="radio" name="serviceopt"> Both Packing & Storage Services</label>
+                                        </div>
+                                    <p class = "form-input-header">Delivery Date & Time:</p>
+                                    <div class="form-group">
+                                        <input type="datetime-local" id="service-time"
+                                        class="form-control
+                                        name="service-time" max="2099-01-01T00:00">
+                                    </div>
+                                    <p class = "form-input-header">Others:</p>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="5" placeholder="Please indicate if you are looking at additional / alternative dates."></textarea>
+                                        <div class="validate"></div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you! We will get back to you soon.</div>
+                                    </div>
+
+                                    <div class="text-center"><button type="submit" class="form-btn" title="Send Message">Send Message</button></div>
+                                </form>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+
+                    <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
-                            <a href="https://airtable.com/shrypYfDEqCgpx2j0" class="title" target="_blank">Packing & Storage</a>
-                            <br>
-                            <h4 class="description">Island-wide packing and/or storage service for your parcels, furniture or any items.</h4>
+                            <h4 class="title">General Enquiries</h4>
+                            <div class="form">
+
+                                <p class = "form-title">Want to learn more or interest in being our partner?
+                                    <br/>Leave us a message!</p>
+
+                                <form action="../forms/contact.php" method="post" role="form" class="php-email-form">
+                                    <p class = "form-input-header">Name:</p>
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Contact:</p>
+                                    <div class="form-group">
+                                        <input type="tel" id="phone" name="phone" class="form-control" 
+                                        maxlength="8" placeholder="Your Contact Number"
+                                        data-msg="Please enter a valid number" 
+                                        required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Email:</p>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    </div>
+                                    <p class = "form-input-header">Company/Shop (if applicable):</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="outlet" id="outlet"
+                                            placeholder="F&B Outlet" data-rule="minlen:2"
+                                            data-msg="Please enter your outlet name" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <p class = "form-input-header">Message:</p>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="5" placeholder="Please enter you message here"></textarea>
+                                        <div class="validate"></div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you! We will get back to you soon.</div>
+                                    </div>
+
+                                    <div class="text-center"><button type="submit" class="form-btn" title="Send Message">Send Message</button></div>
+                                </form>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End of Museums Section -->
-
-        <!-- ======= Entertainment Section ======= -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-
-                <header class="section-header">
-                    <h3 class="section-title">Travelhorse Delivery Management</h3>
-                </header>
-
-                <div class="row portfolio-container">
-
-                    <div class="portfolio-item filter-app wow fadeInUp">
-                        <div class="portfolio-wrap">
-                            <img src="../assets/img/managementdelivery.png" class="img-fluid" alt="" href="travel/index.html#museums">
-                            <div class="portfolio-info">
-                                <h4><a href="http://goodfortravel.co/home" target="_blank">SignIn/Login to our delivery management.</a></h4>
-                            </div>
-                        </div>
-                    </div>
-
-        </section>
-        <!-- End of Entertainment Section -->
 
         <!-- ======= Footer ======= -->
         <footer id="footer" class="section-bg">
@@ -250,6 +401,7 @@
         </footer><!-- End  Footer -->
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
 
         <!-- Vendor JS Files -->
         <script src="../assets/vendor/jquery/jquery.min.js"></script>

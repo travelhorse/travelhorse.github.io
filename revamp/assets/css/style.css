@@ -1685,26 +1685,56 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1bb1dc;
 }
 
-#museums .php-email-form input {
-  padding: 20px 15px;
+#museums .php-email-form input, #museums .php-email-form textarea {
+  padding: 15px 10px;
+  font-size: 11px;
 }
 
-#museums .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-#musuems .php-email-form button[type="submit"] {
+/* #musuems .php-email-form button[type="submit"] {
   background: #1bb1dc;
   border: 0;
   border-radius: 3px;
   padding: 8px 30px;
   color: #fff;
   transition: 0.3s;
-}
+} */
 
 #museums .php-email-form button[type="submit"]:hover {
   background: #0a98c0;
   cursor: pointer;
+}
+
+.form-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form-input-header {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  margin: 2px;
+  text-align: left;
+}
+
+.form-btn {
+  font-size: 13px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+  color: #fff;
+}
+
+.radio {
+  font-size: 13px;
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 4px;
 }
 
 @-webkit-keyframes animate-loading {
