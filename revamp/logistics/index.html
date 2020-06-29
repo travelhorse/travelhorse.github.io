@@ -277,7 +277,7 @@
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="address" id="address"
                                             placeholder="Address" data-rule="minlen:2"
-                                            data-msg="Please enter the address" required />
+                                            data-msg="Please enter an address" required />
                                         <div class="validate"></div>
                                     </div>
                                     <p class = "form-input-header">Service:</p>
@@ -290,7 +290,7 @@
                                     <div class="form-group">
                                         <input type="datetime-local" id="service-time"
                                         class="form-control
-                                        name="service-time" max="2099-01-01T00:00">
+                                        name="service-time" max="2099-01-01T00:00" required>
                                     </div>
                                     <p class = "form-input-header">Others:</p>
                                     <div class="form-group">
@@ -343,13 +343,12 @@
                                     <p class = "form-input-header">Company/Shop (if applicable):</p>
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="outlet" id="outlet"
-                                            placeholder="F&B Outlet" data-rule="minlen:2"
-                                            data-msg="Please enter your outlet name" required />
+                                            placeholder="F&B Outlet" data-rule="minlen:2"/>
                                         <div class="validate"></div>
                                     </div>
                                     <p class = "form-input-header">Message:</p>
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="5" placeholder="Please enter you message here"></textarea>
+                                        <textarea class="form-control" name="message" rows="5" placeholder="Please enter you message here" data-msg="Please enter your message" required></textarea>
                                         <div class="validate"></div>
                                     </div>
 
