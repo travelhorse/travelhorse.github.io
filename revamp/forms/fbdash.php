@@ -35,7 +35,7 @@ $username = USERNAME;
     'host' => 'smtp.zoho.com',
     'username' => $username,
     'password' => $password,
-    'port' => '465'
+    'port' => '25'
   );
 
   $contact->add_message( $_POST['name'], 'From');
