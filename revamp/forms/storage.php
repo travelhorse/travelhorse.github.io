@@ -1,4 +1,4 @@
-<?php include("hiddenInfo.php");
+<?php include("/hiddenFile.php");
 $password = PASSWORD;
 $username = USERNAME;
 ?>
