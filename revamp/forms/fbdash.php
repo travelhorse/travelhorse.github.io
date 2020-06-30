@@ -1,3 +1,8 @@
+<?php include("hiddenInfo.php");
+$password = PASSWORD;
+$username = USERNAME;
+?>
+
 <?php
   /**
   * Requires the "PHP Email Form" library
@@ -7,7 +12,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'dee.yanah.08@gmail.com';
+  $receiving_email_address = 'partnerships@travelhorse.co';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -25,14 +30,13 @@
   $contact->subject = $_POST['outlet'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
+  
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
+    'host' => 'smtp.zoho.com',
+    'username' => $username,
+    'password' => $password,
+    'port' => '465'
   );
-  */
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_phone = ( $_POST['phone]', 'Contact');

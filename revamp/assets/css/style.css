@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-nav, .main-nav * {
-  margin: 0;
+  margin: 2px;
   padding: 0;
   list-style: none;
 }
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  margin: 18px 18px 0 0;
+  margin: 30px 15px;
   color: #065e77;
 }
 
