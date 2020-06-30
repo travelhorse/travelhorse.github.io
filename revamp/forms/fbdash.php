@@ -32,7 +32,7 @@ $username = USERNAME;
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   
   $contact->smtp = array(
-    'host' => 'smtp.zoho.com',
+    'host' => 'mx.zoho.com',
     'username' => $username,
     'password' => $password,
     'port' => '25'

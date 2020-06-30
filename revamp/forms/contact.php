@@ -1,8 +1,3 @@
-<?php include("/hiddenFile.php");
-$password = PASSWORD;
-$username = USERNAME;
-?>
-
 <?php
   /**
   * Requires the "PHP Email Form" library
@@ -10,6 +5,9 @@ $username = USERNAME;
   * The library should be uploaded to: vendor/php-email-form/php-email-form.php
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
+  include("/hiddenFile.php");
+  $password = PASSWORD;
+  $username = USERNAME;
 
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'partnerships@travelhorse.co';
@@ -32,7 +30,7 @@ $username = USERNAME;
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   
   $contact->smtp = array(
-    'host' => 'smtp.zoho.com',
+    'host' => 'https://www.travelhorse.co',
     'username' => $username,
     'password' => $password,
     'port' => '25'
