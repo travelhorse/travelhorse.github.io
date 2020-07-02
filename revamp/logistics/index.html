@@ -40,7 +40,7 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" style="height:80px">
+    <div id="header" style="height:80px">
 
         <div class="container">
 
@@ -71,22 +71,21 @@
 
             <nav class="main-nav float-right d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="../index.html">Home</a></li>
-                    <li class="drop-down"><a href="../index.html#museums">Logistics</a>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="drop-down active"><a href="../index.html#logistics">Logistics</a>
                         <ul>
-                            <li><a href="../logistics/index.html">F&B Dash</a></li>
-                            <li><a href="../logistics/index.html">Logistics Delivery</a></li>
-                            <li><a href="../logistics/index.html">Packing & Storage</a></li>
+                            <li><a href="../logistics/index.html">F&B Delivery/Logistics/Storage</a></li>
+                            <li><a href="http://goodfortravel.co/home" target="_blank">Travelhorse Delivery Management</a></li>
                         </ul>
                     </li>
                     <li class="drop-down"><a href="../index.html#portfolio">Travel</a>
                         <ul>
-                            <li><a href="../travel/index.html#musuems">Virtual Museum Tours</a></li>
+                            <li><a href="../travel/index.html">Virtual Museum Tours</a></li>
                             <li><a href="../travel/index.html#portfolio">Entertainment</a></li>
                             <li><a href="../travel/index.html#podcast">Podcasts</a></li>
                         </ul>
                     </li>
-                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="https://blog.travelhorse.co/" target="_blank">Blog</a></li>
                     <li><a href="../aboutus/index.html">About</a></li>
                     <!-- <li><a href="#legal">Legal</a></li> -->
                     <!-- <li><a href="#team">Team</a></li> -->
@@ -97,19 +96,19 @@
         </div>
 
         <!-- Covid Strip Panel -->
-        <div style="background-color: #dc3545; margin-top: 65px;">
+        <div style="background-color: #dc3545; margin-top: 60px;">
             <header class="section-header">
-                <h4 style="  color: #fff;
-        font-size: 17px;
-        padding: 5px;
-        text-align: center;
-        font-weight: 500;
-        position: relative;
-        font-family: 'Montserrat', sans-serif;">COVID-19: We're here to help F&B with our Dash services.</h4>
+              <h4 style="  color: #fff;
+              font-size: 17px;
+            padding: 5px;
+              text-align: center;
+              font-weight: 500;
+              position: relative;
+              font-family: 'Montserrat', sans-serif;">COVID-19: We're here to help F&B with our Dash services.</h4>
             </header>
         </div>
 
-    </header>
+    </div>
     <!-- #header -->
 
     <!-- ======= List of Activities Section ======= -->
@@ -120,55 +119,94 @@
 
     <main id="main">
 
-        <!-- Heading Panel -->
-        <section id="faq" class="faq wow fadeInUp"
-            style="visibility: visible; animation-name: fadeInUp; background: #2d2b46; padding:70px 0 25px 0;">
-            <div class="container">
-                <header class="section-header">
-                    <h3 style="color: #fff; font-size:45px;">Logistic Needs with Travelhorse</h3>
-                </header>
-            </div>
-        </section>
+        <!-- Call to Action Panel -->
+        <section id="call-to-action" class="about">
+        
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <div class="container">
+            <div class="row faq wow fadeInUp"
+            style="visibility: visible; animation-name: fadeInUp">
 
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-5 col-md-6">
-                        <div class="about-img">
-                            <img src="../assets/img/intro-img.svg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7 col-md-6">
-                        <div class="about-content">
-                            <h2></h2>
-                            <h3>In light of the Covid-19, the team at Travelhorse believes in rallying local startups
-                                and SMEs to come together to service Singapore.</h3>
-                            <p>If you are a startup, a company or just an individual looking for an Island-wide
-                                delivery, packing or storage services, we are able to help.
-                            </p>
-                            <p>
-                                If you require a one-time logistic solution, submit your details in the form below and
-                                we will get back to you within an hour.<br />
-                                If you wish to engage in our services, sign-up at our <a
-                                    href="http://goodfortravel.co/home" target="_blank">Travelhorse Delivery
-                                    Management</a> to be our partner merchant and enjoy special rates.
-                            </p>
-                            For urgent bookings, please contact us at hello@travelhorse.co
-                            </p>
-                        </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="about-content">
+                        <h3>Looking to engage in <br/>our logistic services?</h3>
+                        <p class= "cta-box">
+                            Sign-up at our
+                            <a href="http://goodfortravel.co/auth/google/" target="_blank">Travelhorse Delivery Management</a>
+                            to be our partner merchant and enjoy special rates!
+                        <br/><br/>
+                            Already one of our partners? <a href="http://goodfortravel.co/auth/google/" target="_blank">Sign in here.</a>
+                        <br/><br/>
+                            If you require a one-time logistic solution, submit your details in the form
+                            <a href="http://goodfortravel.co/auth/google/" target="_blank">below</a>
+                            and we will get back to you within an hour.<br /><br/>
+                            Or if you just want to get to know us, fill in this form and we will be very happy to have a chat.
+                        <br/><br/>
+                            For urgent bookings, please contact us at <a href="mailto:hello@travelhorse.co">hello@travelhorse.co</a>
+                        </p>
                     </div>
                 </div>
+
+                <div class="col-lg-5 col-md-6 wow bounceInUp" data-wow-duration="1.4s">
+                        <div class="box">
+                            <h4 class="form-header">General Enquiries</h4>
+                            <div class="form">
+
+                                <p class="form-title">Want to learn more or interest in being our partner?
+                                    <br />Leave us a message!</p>
+
+                                <form
+                                    action='https://forms.zohopublic.com/partnerships/form/GeneralEnquiries/formperma/91bYlku5i9VFx_K9O2jPa5xHpIlC-CINbbhpOfOtVfo/htmlRecords/submit'
+                                    name='form' id='form' method='POST' accept-charset='UTF-8'
+                                    enctype='multipart/form-data'>
+                                    <input type="hidden" name="zf_referrer_name" value="">
+                                    <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                                    <input type="hidden" name="zf_redirect_url" value="revamp\forms\form-sent.html">
+                                    <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                                    <input type="hidden" name="zc_gad" value="">
+                                    <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                                    <!--Name-->
+                                    <p class="form-input-header">Name:
+                                        <em>*</em>
+                                    </p>
+                                    <select name="Name_Salutation" fieldType=7 class="form-control">
+                                        <option>-Select-</option>
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                        <option value="Ms.">Ms.</option>
+                                    </select>
+                                    <input type="text" class="form-control" maxlength="255" name="Name_First"
+                                        fieldType=7 />
+                            </div>
+                            <!--Number-->
+                            <p class="form-input-header">Contact:
+                                <em>*</em>
+                            </p>
+                            <input type="text" class="form-control" name="Number" value="" maxlength="18" />
+                            <!--Email-->
+                            <p class="form-input-header">Email:
+                            </p>
+                            <input type="text" class="form-control" maxlength="255" name="Email" value="" fieldType=9 />
+                            <!--Single Line-->
+                            <p class="form-input-header">Company/Shop Name [If applicable]:
+                            </p>
+                            <input type="text" class="form-control" name="SingleLine" value="" fieldType=1
+                                maxlength="255" />
+                            <!--Multi Line-->
+                            <p class="form-input-header">Message:
+                                <em>*</em>
+                            </p>
+                            <textarea name="MultiLine" class="form-control" maxlength="65535"></textarea>
+                            <button type="submit" class="form-btn"><em>Submit</em></button></form>
+
+                        </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-        </section>
-        <!-- End About Section -->
-
-        <!-- ======= Museums Section ======= -->
-        <section id="museums" class="museums section-bg">
+    <!-- ======= Museums Section ======= -->
+        <section id="logistics" class="museums section-bg">
             <div class="container">
 
                 <header class="section-header">
@@ -177,9 +215,9 @@
 
                 <div class="row">
 
-                    <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
-                            <h4 class="title">F&B Dash</h4>
+                            <h4 class="form-header">F&B Dash</h4>
                             <div class="form">
 
                                 <p class="form-title">Need to get your products to your customers island-wide?
@@ -247,9 +285,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
-                            <h4 class="title">Packing & Storage</h4>
+                            <h4 class="form-header">Packing & Storage</h4>
                             <div class="form">
 
                                 <p class="form-title">Need help packing and/or storing?
@@ -412,61 +450,6 @@
                                 </form>
 
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
-                        <div class="box">
-                            <h4 class="title">General Enquiries</h4>
-                            <div class="form">
-
-                                <p class="form-title">Want to learn more or interest in being our partner?
-                                    <br />Leave us a message!</p>
-
-                                <form
-                                    action='https://forms.zohopublic.com/partnerships/form/GeneralEnquiries/formperma/91bYlku5i9VFx_K9O2jPa5xHpIlC-CINbbhpOfOtVfo/htmlRecords/submit'
-                                    name='form' id='form' method='POST' accept-charset='UTF-8'
-                                    enctype='multipart/form-data'>
-                                    <input type="hidden" name="zf_referrer_name" value="">
-                                    <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
-                                    <input type="hidden" name="zf_redirect_url" value="revamp\forms\form-sent.html">
-                                    <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
-                                    <input type="hidden" name="zc_gad" value="">
-                                    <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
-                                    <!--Name-->
-                                    <p class="form-input-header">Name:
-                                        <em>*</em>
-                                    </p>
-                                    <select name="Name_Salutation" fieldType=7 class="form-control">
-                                        <option>-Select-</option>
-                                        <option value="Mr.">Mr.</option>
-                                        <option value="Mrs.">Mrs.</option>
-                                        <option value="Ms.">Ms.</option>
-                                    </select>
-                                    <input type="text" class="form-control" maxlength="255" name="Name_First"
-                                        fieldType=7 />
-                            </div>
-                            <!--Number-->
-                            <p class="form-input-header">Contact:
-                                <em>*</em>
-                            </p>
-                            <input type="text" class="form-control" name="Number" value="" maxlength="18" />
-                            <!--Email-->
-                            <p class="form-input-header">Email:
-                            </p>
-                            <input type="text" class="form-control" maxlength="255" name="Email" value="" fieldType=9 />
-                            <!--Single Line-->
-                            <p class="form-input-header">Company/Shop Name [If applicable]:
-                            </p>
-                            <input type="text" class="form-control" name="SingleLine" value="" fieldType=1
-                                maxlength="255" />
-                            <!--Multi Line-->
-                            <p class="form-input-header">Message:
-                                <em>*</em>
-                            </p>
-                            <textarea name="MultiLine" class="form-control" maxlength="65535"></textarea>
-                            <button type="submit" class="form-btn"><em>Submit</em></button></form>
-
                         </div>
                     </div>
                 </div>
