@@ -674,6 +674,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 .section-bg {
   background: #f5f8fd;
+  height: 100%;
 }
 
 /* About Us Section
@@ -877,9 +878,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
+  height: 100%;
   background: #2d2b46;
   background-size: cover;
   padding-top: 90px;
+}
+
+@media (max-width: 767px) {
+  #call-to-action {
+   padding-top: 25px;
+  }
 }
 
 .cta-box {
