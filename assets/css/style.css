@@ -436,29 +436,33 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
   background-size: cover;
 }
 
+#hero .intro-img {
+  margin-top: 150px;
+}
+
 @media (max-width: 767px) {
   #hero {
     height: auto;
-    padding: 80px 0 20px 0;
+    padding: 80px 0 0 0;
   }
   #hero .container {
     height: auto !important;
   }
   #hero .intro-img {
     width: 80%;
-    margin-top: 70px;
+    margin-top: 100px;
   }
 }
 
 @media (min-width: 992px) {
   #hero .intro-info {
-    padding-top: 80px;
+    padding-top: 190px;
   }
 }
 
@@ -601,7 +605,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 .section-header h3 {
   font-size: 36px;
-  color: #413e66;
+  color: #ed7c47;
   text-align: center;
   font-weight: 700;
   position: relative;
@@ -647,6 +651,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 40px;
 }
 
+.section-header h4 {
+  margin-bottom: 5px;
+}
+
 .section-header2 p {
   text-align: center;
   margin: auto;
@@ -666,6 +674,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 .section-bg {
   background: #f5f8fd;
+  height: 100%;
 }
 
 /* About Us Section
@@ -747,13 +756,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: .5s;
 }
 
-/* Museums / Logistics Section
+/* box
 --------------------------------*/
-#museums , #logistics {
-  padding: 60px 0;
-}
 
-#museums .box , #logistics .box {
+.box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -765,8 +771,18 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#museums .box:hover, #logistics .box:hover {
+.box:hover {
   transform: scale(1.1);
+}
+
+.box:hover .title a {
+  color: #1bb1dc;
+}
+
+/* Museums / Logistics Section
+--------------------------------*/
+#museums , #logistics {
+  padding: 60px 0;
 }
 
 #museums .icon, #logistics .icon {
@@ -793,10 +809,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #museums .title a , #logistics .title a {
   color: #111;
-}
-
-#museums .box:hover .title a , #logistics .box:hover .title a {
-  color: #1bb1dc;
 }
 
 #museums .description , #logistics .description{
@@ -866,20 +878,117 @@ h1, h2, h3, h4, h5, h6 {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
+  height: 100%;
   background: #2d2b46;
   background-size: cover;
-  padding: 40px 0;
+  padding-top: 90px;
 }
 
-#call-to-action .cta-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
+@media (max-width: 767px) {
+  #call-to-action {
+   padding-top: 25px;
+  }
 }
 
-#call-to-action .cta-text {
-  color: #fff;
+.cta-box {
+  padding: 50px;
 }
+
+#call-to-action .about-content {
+  color: #fff;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#call-to-action .about-content h3{
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 35px;
+  text-shadow: 3px 3px 3px rgba(248, 146, 12, 0.521);;
+}
+
+.call-to-action-btn {
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #ed7c47;
+  color: #fff;
+  padding: 2px;
+  box-shadow: 3px 3px 3px rgba(4, 2, 27, 0.5);
+}
+
+.call-to-action-btn a{
+  color:#fff;
+  font-weight: bolder;
+}
+
+#for-mobile {
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  padding: 4px;
+  text-align: center;
+}
+
+#for-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#for-mobile {display: block;}
+
+}
+
+.main-nav .call-to-action-btn a:hover{
+  color:#000;
+  font-weight: bolder;
+}
+
+.cta-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.cta-text {
+  font-size: 17px;
+}
+
+.cta-img img{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  }
+  
+.cta-img img:hover {
+    width: 100%;
+    transform: scale(1.03);
+  }
+  
+.cta-img::before {
+    position: absolute;
+    left: -31px;
+    top: -30px;
+    width: 90%;
+    height: 92%;
+    z-index: -1;
+    content: '';
+    background-color: #ebf1fa;
+    transition: .5s;
+  }
+  
+.cta-img::after {
+    position: absolute;
+    right: -31px;
+    bottom: -30px;
+    width: 90%;
+    height: 92%;
+    z-index: -1;
+    content: '';
+    background-color: #ebf1fa;
+    transition: .5s;
+  }
 
 @media (min-width: 991px) {
   #call-to-action .cta-btn-container {
@@ -889,24 +998,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 26px;
-  border-radius: 3px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 3px solid #fff;
-  color: #fff;
+@media (max-width: 767px) {
+  .cta-box {
+    padding: 25px;
+  }
 }
 
-#call-to-action .cta-btn:hover {
-  background: #1bb1dc;
-  border: 3px solid #1bb1dc;
-}
 
 /* Features Section
 --------------------------------*/
@@ -1685,26 +1782,91 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1bb1dc;
 }
 
-#museums .php-email-form input {
-  padding: 20px 15px;
+#museums .php-email-form input, #museums .php-email-form textarea {
+  padding: 15px 10px;
+  font-size: 11px;
 }
 
-#museums .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-#musuems .php-email-form button[type="submit"] {
+/* #musuems .php-email-form button[type="submit"] {
   background: #1bb1dc;
   border: 0;
   border-radius: 3px;
   padding: 8px 30px;
   color: #fff;
   transition: 0.3s;
-}
+} */
 
 #museums .php-email-form button[type="submit"]:hover {
   background: #0a98c0;
   cursor: pointer;
+}
+
+.form-header {
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #ed7c47;
+}
+
+.form-title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-input-header {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  margin: 2px;
+  text-align: left;
+}
+
+.form-btn {
+  font-size: 13px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 9px;
+  border-radius: 4px;
+  border-color: #000;
+  transition: 0.5s;
+  color: #fff;
+  background: #ed7c47;
+  color: #fff;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.form-datetime-control {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 30%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-sub {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.radio {
+  font-size: 13px;
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 4px;
 }
 
 @-webkit-keyframes animate-loading {
