@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  margin: 30px 15px;
+  margin: 18px 18px 0 0;
   color: #065e77;
 }
 
@@ -430,6 +430,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section
