@@ -491,6 +491,30 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#hero .intro-info .btn-get-started-1, #hero .intro-info .btn-services, #about .about-content .btn-get-started-1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  margin: 10px 10px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #000;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+  color: #fff;
+  box-shadow: 2px 2px 2px rgba(4, 2, 27, 0.5);
+}
+
+#hero .intro-info .btn-get-started-1:hover, #about .about-content .btn-get-started-1:hover {
+  background: #fff;
+  color: #ed7c47;
+}
+
 #hero .intro-info .btn-get-started, #hero .intro-info .btn-services, #about .about-content .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -501,14 +525,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 32px;
   margin: 10px 10px;
   border-radius: 4px;
+  border-style: solid;
+  border-color: #000;
   transition: 0.5s;
-  color: #fff;
-  background: #1bb1dc;
-  color: #fff;
+  color: #ed7c47;
+  background: #fff;
+  color: #ed7c47;
+  box-shadow: 2px 2px 2px rgba(4, 2, 27, 0.5);
 }
 
-#hero .intro-info .btn-get-started:hover, #hero .intro-info .btn-services:hover {
-  background: #0a98c0;
+#hero .intro-info .btn-get-started:hover, #about .about-content .btn-get-started:hover {
+  background: #1bb1dc;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -577,25 +605,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 34px;
     margin-bottom: 30px;
   }
-}
-
-#hero2 .intro-info .btn-get-started, #hero2 .intro-info .btn-services, #about .about-content .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 32px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #1bb1dc;
-  color: #fff;
-}
-
-#hero2 .intro-info .btn-get-started:hover, #hero2 .intro-info .btn-services:hover {
-  background: #0a98c0;
 }
 
 /*--------------------------------------------------------------
@@ -685,6 +694,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #about .about-content {
   padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+  #about .about-content {
+    text-align: center;
+  }
 }
 
 #about .about-content h2 {
@@ -951,6 +966,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .cta-text {
   font-size: 17px;
+}
+
+@media (max-width: 767px) {
+  .cta-title, .cta-text {
+    text-align: center;
+  }
 }
 
 .cta-img img{
