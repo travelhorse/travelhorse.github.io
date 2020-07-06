@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   #header {
-    height: 70px;
+    height: 80px;
     padding: 15px 0;
   }
 }
@@ -431,7 +431,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -490,30 +489,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 34px;
     margin-bottom: 30px;
   }
-}
-
-#hero .intro-info .btn-get-started-1, #hero .intro-info .btn-services, #about .about-content .btn-get-started-1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 32px;
-  margin: 10px 10px;
-  border-radius: 4px;
-  border-style: solid;
-  border-color: #000;
-  transition: 0.5s;
-  color: #fff;
-  background: #1bb1dc;
-  color: #fff;
-  box-shadow: 2px 2px 2px rgba(4, 2, 27, 0.5);
-}
-
-#hero .intro-info .btn-get-started-1:hover, #about .about-content .btn-get-started-1:hover {
-  background: #fff;
-  color: #ed7c47;
 }
 
 #hero .intro-info .btn-get-started, #hero .intro-info .btn-services, #about .about-content .btn-get-started {
