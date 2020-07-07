@@ -4,27 +4,27 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function($) {
+(function ($) {
   "use strict";
 
   // Preloader (if the #preloader div exists)
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
+      $('#preloader').delay(100).fadeOut('slow', function () {
         $(this).remove();
       });
     }
   });
 
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
     }
   });
-  $('.back-to-top').click(function() {
+  $('.back-to-top').click(function () {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
@@ -35,7 +35,7 @@
   new WOW().init();
 
   // Header scroll class
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
     } else {
@@ -48,7 +48,7 @@
   }
 
   // Smooth scroll for the navigation and links with .scrollto classes
-  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
+  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -86,10 +86,10 @@
   var main_nav = $('.main-nav, .mobile-nav');
   var main_nav_height = $('#header').outerHeight();
 
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
 
-    nav_sections.each(function() {
+    nav_sections.each(function () {
       var top = $(this).offset().top - main_nav_height,
         bottom = top + $(this).outerHeight();
 
@@ -107,11 +107,11 @@
   });
 
   // Porfolio isotope and filter
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
-    $('#portfolio-flters li').on('click', function() {
+    $('#portfolio-flters li').on('click', function () {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
@@ -122,7 +122,7 @@
   });
 
   // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
+  $(document).ready(function () {
     $('.venobox').venobox();
   });
 
@@ -153,13 +153,39 @@
   });
 
   // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+  window.onscroll = function () { myFunction() };
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+
+  // Get the modal
+  var modal = document.getElementById("contact");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("contactbtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
 })(jQuery);

@@ -627,7 +627,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 .section-header2 h3 {
   font-size: 36px;
-  color: #413e66;
+  color: #ed7c47;
   text-align: center;
   font-weight: 700;
   position: relative;
@@ -680,7 +680,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about .about-content h2 {
-  color: #413e66;
+  color: #ed7c47;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -773,7 +773,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Museums / Logistics Section
 --------------------------------*/
-#museums , #logistics {
+#museums , #logistics, #forms{
   padding: 60px 0;
 }
 
@@ -869,7 +869,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Call To Action Section
 --------------------------------*/
-#call-to-action {
+#get-started {
   height: 100%;
   background: #2d2b46;
   background-size: cover;
@@ -877,7 +877,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
-  #call-to-action {
+  #get-started {
    padding-top: 25px;
   }
 }
@@ -886,20 +886,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px;
 }
 
-#call-to-action .about-content {
+#get-started .about-content {
   color: #fff;
   padding-top: 30px;
   text-align: center;
 }
 
-#call-to-action .about-content h3{
+#get-started .about-content h3{
   font-weight: bolder;
   font-style: oblique;
   font-size: 35px;
-  text-shadow: 3px 3px 3px rgba(248, 146, 12, 0.521);;
+  text-shadow: 3px 3px 3px rgba(248, 146, 12, 0.521);
 }
 
-.call-to-action-btn {
+.get-started-btn {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
@@ -909,7 +909,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 3px 3px 3px rgba(4, 2, 27, 0.5);
 }
 
-.call-to-action-btn a{
+.get-started-btn a{
   color:#fff;
   font-weight: bolder;
 }
@@ -930,7 +930,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.main-nav .call-to-action-btn a:hover{
+.main-nav .get-started-btn a:hover{
   color:#000;
   font-weight: bolder;
 }
@@ -989,7 +989,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 @media (min-width: 991px) {
-  #call-to-action .cta-btn-container {
+  #get-started .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1595,7 +1595,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top {
-  padding: 30px 0 0 0;
+  padding: 10px 0 0 0;
   /* background: #f5f8fd; */
 }
 
@@ -1625,6 +1625,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .social-links {
   justify-content: center; display: flex;
+  margin-top: 20px;
 }
 
 
@@ -1648,9 +1649,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-@media (max-width: 574px) {
+@media (max-width: 767px) {
   #footer .footer-top .social-links a {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -1802,8 +1806,9 @@ h1, h2, h3, h4, h5, h6 {
 .form-header {
   font-weight: 700;
   margin-bottom: 25px;
+  font-style: oblique;
   font-size: 30px;
-  color: #ed7c47;
+  text-shadow: 3px 3px 3px rgba(237, 124, 71, 0.829);
 }
 
 .form-title {
@@ -1887,9 +1892,47 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
   color: #535074;
   font-size: 15px;
+}
+
+#footer .copyright a {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#footer button  {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #footer .copyright {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  #footer .copyright a {
+    padding: 5px 10px;
+  }
+  
+  #footer button  {
+    padding: 5px 10px;
+  }  
+}
+
+#footer .copyright a:hover, , #footer .copyright button:hover {
+  color: #0a98c0;
 }
 
 #footer .credits {
@@ -1905,4 +1948,47 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .credits a:hover {
   color: #0a98c0;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+@media (max-width: 767px) {
+  .modal-content {
+    margin: 40% auto;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
