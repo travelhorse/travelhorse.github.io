@@ -444,11 +444,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
-#hero {display: block;}
+#hero .carousel-item {display: block;}
 
 @media screen and (max-width: 768px) {
 
-#hero  {display: none;}
+#hero  .carousel-item {display: none;}
 
 }
 
@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 150px;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   #hero {
     height: auto;
     padding: 80px 0 0 0;
@@ -498,7 +498,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 34px;
     margin-bottom: 30px;
   }
-}
+} */
 
 #hero .intro-info .btn-get-started, #hero .intro-info .btn-services, #about .about-content .btn-get-started {
   font-family: "Montserrat", sans-serif;
@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .intro-info .btn-get-started:hover, #about .about-content .btn-get-started:hover {
   background: #1bb1dc;
   color: #fff;
-}
+} 
 
 
 /*--------------------------------------------------------------
