@@ -127,7 +127,18 @@
     <!-- #header -->
 
     <!-- ======= List of Activities Section ======= -->
-    <section id="hero" class="clearfix">
+    <div id="hero" class="clearfix carousel slide  d-flex h-100" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active intro-img">
+              <img src="assets/img/carousel1.png" class="d-block w-100 img-fluid" alt="">
+            </div>
+            <div class="carousel-item intro-img">
+              <img src="assets/img/carousel2.png" class="d-block w-80 img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- <section id="hero" class="clearfix">
         <div class="container d-flex h-100">
             <div class="row justify-content-center align-self-center">
                 <div class="col-md-6 intro-info order-md-first order-last">
@@ -138,12 +149,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End of List of Activities -->
 
     <main id="main">
 
         <!-- ======= About Section ======= -->
+        
         <section id="about" class="about">
 
             <div class="container">
@@ -152,7 +164,7 @@
                 </header>
                 <div class="row">
 
-                    <div class="col-lg-5 col-md-6">
+                    <div id="img-for-desktop" class="col-lg-5 col-md-6">
                         <div class="about-img">
                             <img src="assets/img/first_post.png" alt="">
                         </div>
@@ -181,6 +193,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div id="img-for-mobile" class="conatainer" style="background-color: #fff;">
+                <header class="section-header">
+                    <h3 class="section-title" style="padding-top: 30px; margin-top:30px;">Our Dash Service</h3>
+                </header>
+
+                <a href="http://travelhorse.co/assets/img/carousel3.png"><img src="assets/img/carousel3.png" alt=""></a>
             </div>
 
         </section>

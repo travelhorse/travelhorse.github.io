@@ -434,12 +434,22 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 #hero {
   width: 100%;
   height: 80vh;
   position: relative;
-  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background-color: #f5f8fd;
+  /* background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat; */
   background-size: cover;
+}
+
+#hero .carousel-inner{display: block;}
+
+@media screen and (max-width: 768px) {
+
+#hero .carousel-inner {display: none;}
+
 }
 
 #hero .intro-img {
@@ -455,7 +465,6 @@ h1, h2, h3, h4, h5, h6 {
     height: auto !important;
   }
   #hero .intro-img {
-    width: 80%;
     margin-top: 100px;
   }
 }
@@ -665,8 +674,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Us Section
 --------------------------------*/
+#img-for-mobile img{
+  width: 100%;
+  height: 200px;
+}
+
+#img-for-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#img-for-mobile {display: block;}
+
+}
+
+#img-for-desktop {display: block;}
+
+@media screen and (max-width: 768px) {
+
+#img-for-desktop {display: none;}
+
+}
+
 #about {
   padding: 80px 0;
+  background-color: #f5f8fd;
 }
 
 #about .about-content {
