@@ -439,8 +439,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 80vh;
   position: relative;
-  background-color: #f5f8fd;
-  /* background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat; */
+  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
   background-size: cover;
 }
 
@@ -695,12 +694,22 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Us Section
 --------------------------------*/
-/* #img-for-mobile img{
+#img-for-mobile img{
   width: 100%;
-  height: 200px;
+  height: 500px;
 }
 
 #img-for-mobile {display: none;}
+
+#img-for-mobile h3{
+  color: #413e66;
+  background-color: #fff;
+  font-weight: bolder;
+  font-size: 35px;
+  margin: 30px 0 0 0;
+  padding: 30px;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -714,7 +723,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #img-for-desktop {display: none;}
 
-} */
+}
 
 #about {
   padding: 80px 0;
