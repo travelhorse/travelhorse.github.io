@@ -702,11 +702,11 @@ h1, h2, h3, h4, h5, h6 {
 #img-for-mobile {display: none;}
 
 #img-for-mobile h3{
-  color: #413e66;
+  color: #2d2b46;
   font-weight: bolder;
   font-size: 35px;
-  margin: 30px 0 0 0;
-  padding: 30px;
+  margin: 10px 0 0 0;
+  padding: 20px;
   text-align: center;
 }
 
@@ -719,11 +719,12 @@ h1, h2, h3, h4, h5, h6 {
 #img-for-desktop {display: block;}
 
 #img-for-desktop h3{
-  color: #413e66;
+  color: #2d2b46;
   font-weight: bolder;
   font-size: 35px;
   margin: 10px 0 0 0;
   padding: 0 0 10px 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -820,7 +821,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 
 .box {
-  padding: 30px;
+  padding: 10px 30px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -939,15 +940,9 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 #get-started {
   height: 100%;
-  background: #2d2b46;
+  background: #f5f8fd;
   background-size: cover;
-  padding-top: 90px;
-}
-
-@media (max-width: 767px) {
-  #get-started {
-   padding-top: 25px;
-  }
+  padding-top: 10px;
 }
 
 .cta-box {
@@ -955,16 +950,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #get-started .about-content {
-  color: #fff;
-  padding-top: 30px;
+  color: #000;
+  padding-top: 0px;
   text-align: center;
 }
 
 #get-started .about-content h3{
   font-weight: bolder;
   font-style: oblique;
-  font-size: 35px;
-  text-shadow: 3px 3px 3px rgba(248, 146, 12, 0.521);
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  #get-started {
+   padding-top: 25px;
+   background-color: #2d2b46;
+  }
+
+  #get-started .about-content {
+    color: #fff;
+  }
+  
+  #get-started .about-content h3{
+    text-shadow: 3px 3px 3px rgba(237, 124, 71, 0.829);
+    font-size: 30px;
+  }
 }
 
 .get-started-btn {
@@ -982,7 +992,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
 }
 
-#for-mobile {
+#cta-for-mobile {
   width: 100%;
   height: 30px;
   margin: 0 auto;
@@ -990,11 +1000,19 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#for-mobile {display: none;}
+.for-mobile {display: none;}
 
 @media screen and (max-width: 768px) {
 
-#for-mobile {display: block;}
+.for-mobile {display: block;}
+
+}
+
+.for-desktop {display: block;}
+
+@media screen and (max-width: 768px) {
+
+.for-desktop {display: none;}
 
 }
 
@@ -1871,9 +1889,28 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+.main-form {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background-color:#ed7c47;
+  color: #fff;
+  border: 2px #fff solid;
+}
+
+.main-form .form-header {
+  color: #000;
+  text-shadow: 3px 3px 3px #fff
+}
+
+.main-form .form-btn {
+  background-color: #000;
+  color: #fff;
+}
+
 .form-header {
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-style: oblique;
   font-size: 30px;
   text-shadow: 3px 3px 3px rgba(237, 124, 71, 0.829);
@@ -1882,6 +1919,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-title {
   font-size: 13px;
   font-weight: bold;
+  margin: 5px;
 }
 
 .form-input-header {
@@ -1897,7 +1935,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
   letter-spacing: 1px;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 5px 9px;
   border-radius: 4px;
   border-color: #000;
@@ -1908,7 +1946,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .form-datetime-control {
