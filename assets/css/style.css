@@ -1748,15 +1748,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .for-log {
+  padding: 0;
   text-align: left;
   align-content: left;
-  margin-left: 20px;
+  margin: 0;
 }
 
-#footer .for-log .social-links {
+/* #footer .for-log .social-links {
   justify-items: right;
   align-content: right;
-}
+} */
 
 #footer .for-log .social-links a {
   display: inline-block;
@@ -1765,7 +1766,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1;
   padding: 15px 0;
-  margin: 0 20px 5px 20px;
+  margin: 0 20px 0px 20px;
   border-radius: 50%;
   text-align: center;
   width: 50px;
