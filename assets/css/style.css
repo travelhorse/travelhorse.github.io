@@ -826,11 +826,11 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 
 .box {
-  padding: 10px 30px;
+  padding: 10px 15px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin: 0 10px 40px 10px;
+  margin: 0 10px 20px 10px;
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
@@ -1649,6 +1649,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  #faq .for-log {
+    text-align: left;
+  }
+}
+
 @media (max-width: 768px) {
   #faq #faq-list a {
     font-size: 18px;
@@ -1717,7 +1723,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .social-links {
-  justify-content: center; display: flex;
   margin-top: 20px;
 }
 
@@ -1742,12 +1747,41 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+#footer .for-log {
+  text-align: left;
+  align-content: left;
+  margin-left: 20px;
+}
+
+#footer .for-log .social-links {
+  justify-items: right;
+  align-content: right;
+}
+
+#footer .for-log .social-links a {
+  display: inline-block;
+  font-size: 20px;
+  background: #1bb1dc;
+  color: #fff;
+  line-height: 1;
+  padding: 15px 0;
+  margin: 0 20px 5px 20px;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+
+
 @media (max-width: 767px) {
   #footer .footer-top .social-links a {
-    margin-bottom: 10px;
-    font-size: 15px;
-    width: 40px;
-    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -1899,6 +1933,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-form {
   position: fixed;
   bottom: 0;
+  right: 100px;
   z-index: 999;
   background-color:#ed7c47;
   color: #fff;
