@@ -1032,6 +1032,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   font-weight: bold;
   padding-top: 10px;
+  text-shadow: 3px 3px 3px rgba(237, 124, 71, 0.829);
 }
 
 .cta-text {
