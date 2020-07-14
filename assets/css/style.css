@@ -696,13 +696,15 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 #img-for-mobile img{
   width: 100%;
-  height: 850px;
-  padding-bottom: 30px;
+  height: 900px;
+  padding: 30px;
+  position: relative;
 }
 
 #img-for-mobile {
   display: none;
   background-color: #f5f8fd;
+  width: 100vw;
 }
 
 #img-for-mobile h3{
@@ -1016,6 +1018,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .for-desktop {display: block;}
+
+.for-desktop .cta-title, .for-desktop .cta-text {
+  text-align: left;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -1935,12 +1941,19 @@ h1, h2, h3, h4, h5, h6 {
 .main-form {
   position: fixed;
   bottom: 0;
-  right: 100px;
+  right: 75px;
   z-index: 999;
   background-color:#ed7c47;
   color: #fff;
   border: 2px #fff solid;
 }
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .main-form {
+    right: 30px;
+  }
+}
+
 
 .main-form .form-header {
   color: #000;
