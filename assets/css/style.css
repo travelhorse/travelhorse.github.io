@@ -1019,7 +1019,7 @@ h1, h2, h3, h4, h5, h6 {
 .for-desktop {display: block;}
 
 .for-desktop .cta-title, .for-desktop .cta-text {
-  text-align: left;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1657,7 +1657,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   #faq .for-log {
-    text-align: left;
+    text-align: center;
   }
 }
 
