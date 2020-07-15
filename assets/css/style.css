@@ -839,7 +839,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .box:hover {
-  transform: scale(1.1);
+  transform: scaleX(1.1);
 }
 
 .box:hover .title a {
