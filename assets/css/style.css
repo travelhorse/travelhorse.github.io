@@ -649,7 +649,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   position: relative;
   font-family: "Montserrat", sans-serif;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 /* Sections Header2
@@ -1772,7 +1772,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1;
   padding: 15px 0;
-  margin: 0 20px 0px 20px;
+  margin: 0 20px 10px 20px;
   border-radius: 50%;
   text-align: center;
   width: 50px;
@@ -2056,7 +2056,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding-top: 10px;
   color: #535074;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #footer .copyright a {
