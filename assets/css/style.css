@@ -785,7 +785,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #about .about-img {
   position: relative;
-  margin: 30px 30px 30px 30px;
+  height: auto;
+  margin: 10px 30px 30px 30px;
 }
 
 #about .about-img img {
@@ -1962,6 +1963,9 @@ h1, h2, h3, h4, h5, h6 {
 .main-form .form-btn {
   background-color: #000;
   color: #fff;
+  width: 80%;
+  font-style: normal;
+  font-size: 18px;
 }
 
 .form-header {
@@ -1987,7 +1991,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-btn {
-  font-size: 13px;
+  width: 80%;
+  font-size: 18px;
   font-weight: bolder;
   letter-spacing: 1px;
   display: inline-block;
