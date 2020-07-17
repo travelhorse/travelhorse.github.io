@@ -163,10 +163,10 @@
   }
 
   // Get the modal
-  var modal = document.getElementById("contact");
+  var modal = document.getElementById("apply");
 
   // Get the button that opens the modal
-  var btn = document.getElementById("contactbtn");
+  var btn = document.getElementById("applybtn");
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];

@@ -505,7 +505,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#hero .intro-info .btn-get-started, #hero .intro-info .btn-services, #about .about-content .btn-get-started {
+#hero .intro-info .btn-get-started, #hero .intro-info .btn-services, #about .about-content .btn-get-started, .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -535,9 +535,9 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero2 {
   width: 100%;
-  height: 15vh;
+  height: 80vh;
   position: relative;
-  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background: #fff;
   background-size: cover;
 }
 
@@ -2115,7 +2115,7 @@ h1, h2, h3, h4, h5, h6 {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 999; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -2128,10 +2128,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 13% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  text-align: right;
 }
 
 @media (max-width: 767px) {
