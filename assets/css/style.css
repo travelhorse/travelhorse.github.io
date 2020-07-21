@@ -1941,16 +1941,22 @@ h1, h2, h3, h4, h5, h6 {
 .main-form {
   position: fixed;
   bottom: 0;
-  right: 75px;
+  right: 90px;
   z-index: 999;
   background-color:#ed7c47;
   color: #fff;
   border: 2px #fff solid;
 }
 
+@media (min-width: 1001px) and (max-width: 1300px) {
+  .main-form {
+    right: 40px;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 1000px) {
   .main-form {
-    right: 30px;
+    right: 70px;
   }
 }
 
