@@ -298,6 +298,19 @@
 
     </main>
 
+    <!-- Cookie Policy Section -->
+    <div class="toast wow bounceInLeft" data-wow-duration="1.4s" id="myToast"
+        style="position: fixed; bottom: 75px; left: 15px; width: 175px;">
+        <div class="toast-header">
+            <strong class="mr-auto">Cookie Policy</strong>
+            <span class="ml-2 close" data-dismiss="toast">&times;</span>
+        </div>
+        <div class="toast-body">
+            By using our website, you are agreeing to our <a href="legal/cookie-policy">cookie policy</a>.
+        </div>
+    </div>
+    <!-- End of Cookie Policy Section -->
+
     <!-- ======= Footer ======= -->
 
     <footer id="footer" class="section-bg">
@@ -399,6 +412,13 @@
         var myLandbot = new LandbotLivechat({
             index: 'https://chats.landbot.io/v2/H-648761-6ZA83DMIX3ZN4R25/index.html',
             accent: '#ed7c47',
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myToast").toast({ autohide: false });
+            $("#myToast").toast('show');
         });
     </script>
 

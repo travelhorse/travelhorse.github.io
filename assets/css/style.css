@@ -2143,7 +2143,7 @@ h1, h2, h3, h4, h5, h6 {
 .modal-content {
   background-color: #fefefe;
   margin: 13% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 40px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
 }
@@ -2171,4 +2171,10 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+/* Toast for cookie policy notification */
+.toast {
+  z-index: 9999;
 }
