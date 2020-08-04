@@ -470,14 +470,17 @@
         <!-- End of Museums Section -->
 
         <!-- Cookie Policy Section -->
-        <div class="toast wow bounceInLeft" data-wow-duration="1.4s" id="myToast"
-            style="position: fixed; bottom: 75px; left: 15px; width: 175px;">
-            <div class="toast-header">
-                <strong class="mr-auto">Cookie Policy</strong>
-                <span class="ml-2 close" data-dismiss="toast">&times;</span>
-            </div>
-            <div class="toast-body">
-                By using our website, you are agreeing to our <a href="legal/cookie-policy">cookie policy</a>.
+        <<div id="cookie" class="modal fade">
+            <div class="modal-dialog cookie-modal">
+                <div class="modal-content cookie-content">
+                    <div class="modal-header">
+                        <strong class="mr-auto">Cookie Policy</strong>
+                        <span class="ml-2 close" data-dismiss="modal">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        By using our website, you are agreeing to our <a href="https://www.travelhorse.co/legal/cookie-policy">cookie policy</a>.
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End of Cookie Policy Section -->
@@ -550,8 +553,8 @@
 
         <script>
             $(document).ready(function () {
-                $("#myToast").toast({ autohide: false });
-                $("#myToast").toast('show');
+                $("#cookie").modal({ autohide: false });
+                $("#cookie").modal('show');
             });
         </script>
 

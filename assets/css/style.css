@@ -2174,7 +2174,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Toast for cookie policy notification */
-.toast {
+/* Modal for cookie policy notification */
+#cookie {
   z-index: 9999;
+  align-self: center;
+}
+
+.cookie-modal {
+  margin: auto;
+  max-width: none;"
+}
+
+.cookie-content {
+  width: 70vw;
+  align-self: center;
+  padding: 15px;
 }
