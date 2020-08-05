@@ -2195,17 +2195,31 @@ h1, h2, h3, h4, h5, h6 {
 #cookie {
   z-index: 9999;
   align-self: center;
+  margin-bottom: 0;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
 }
 
 .cookie-modal {
-  margin: auto;
-  max-width: none;"
+  margin-bottom: 0;
+  max-width: none;
 }
 
+.cookie-dialog {
+  position:fixed;
+  top:auto;
+  right:auto;
+  left:auto;
+  bottom:0;
+  z-index: 9999;
+}  
+
 .cookie-content {
-  width: 70vw;
+  width: 50vw;
   align-self: center;
-  padding: 15px;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2219,5 +2233,9 @@ h1, h2, h3, h4, h5, h6 {
 
   .table .mobile-break {
     word-break: break-word;
+  }
+
+  .cookie-content {
+    width: 90vw;
   }
 }
