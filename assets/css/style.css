@@ -2152,6 +2152,23 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
+.accept {
+  text-align: center;
+  color: #ed7c47;
+  float: right;
+  font-size: 17px;
+  font-weight: bold;
+  border: 2px black solid;
+  padding: 5px;
+}
+
+.accept:hover,
+.accept:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .modal-content {
     margin: 40% auto;
@@ -2189,4 +2206,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 70vw;
   align-self: center;
   padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    font-size: 11px;
+  }
+
+  .table td, .table th {
+    padding: 5px;
+  }
+
+  .table .mobile-break {
+    word-break: break-word;
+  }
 }
