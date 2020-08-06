@@ -2152,25 +2152,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
-.accept {
-  text-align: center;
-  background-color: #fff;
-  color: #ed7c47;
-  float: none;
-  font-size: 15px;
-  font-weight: bold;
-  border: 2px black solid;
-  box-shadow: 3px 3px #ed7c47, 2px 2px #ed7c47, 1px 1px #ed7c47;
-  padding: 3px 5px;
-  display: inline-block;
-}
-
-.accept:hover,
-.accept:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 @media (max-width: 767px) {
   .modal-content {
@@ -2232,6 +2213,26 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   margin-bottom: 5px;
   margin-left: 5px; */
+}
+
+.accept {
+  text-align: center;
+  background-color: #fff;
+  color: #ed7c47;
+  float: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px black solid;
+  box-shadow: 3px 3px #ed7c47, 2px 2px #ed7c47, 1px 1px #ed7c47;
+  padding: 3px 5px;
+  display: inline-block;
+}
+
+.accept:hover,
+.accept:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
