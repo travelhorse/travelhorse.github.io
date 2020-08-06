@@ -2155,11 +2155,12 @@ h1, h2, h3, h4, h5, h6 {
 .accept {
   text-align: center;
   color: #ed7c47;
-  float: right;
-  font-size: 17px;
+  float: none;
+  font-size: 15px;
   font-weight: bold;
   border: 2px black solid;
-  padding: 5px;
+  padding: 3px;
+  display: inline-block;
 }
 
 .accept:hover,
@@ -2195,13 +2196,13 @@ h1, h2, h3, h4, h5, h6 {
 #cookie {
   z-index: 9999;
   align-self: center;
-  margin-bottom: 0;
+  margin: 0;
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
 }
 
 .cookie-modal {
-  margin-bottom: 0;
+  margin: 0;
   max-width: none;
 }
 
@@ -2212,14 +2213,21 @@ h1, h2, h3, h4, h5, h6 {
   left:auto;
   bottom:0;
   z-index: 9999;
+  margin: 0;
 }  
 
+.cookie-body {
+  padding: 5px 10px;
+}
+
 .cookie-content {
-  width: 50vw;
-  align-self: center;
+  width: 100vw;
+  margin: 0;
+  padding: 10px;
+  /* align-self: center;
   padding: 10px;
   margin-bottom: 5px;
-  margin-left: 5px;
+  margin-left: 5px; */
 }
 
 @media screen and (max-width: 768px) {
@@ -2235,7 +2243,17 @@ h1, h2, h3, h4, h5, h6 {
     word-break: break-word;
   }
 
-  .cookie-content {
+  /* .cookie-content {
     width: 90vw;
+  } */
+
+  .cookie-body {
+    width: 70vw;
+    font-size: 12px;;
+  }
+
+  .accept {
+    margin: 5px 0px;
+    font-size: 12px;;
   }
 }
