@@ -1649,6 +1649,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 20px;
 }
 
+#faq #faq-list p a {
+  font-size: 15px;
+  display: inline;
+  padding: 0;
+}
+
 #faq #faq-list i {
   font-size: 24px;
   position: absolute;
@@ -1658,6 +1664,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #faq #faq-list p {
   margin-bottom: 20px;
+  font-size: 15px;
 }
 
 @media (min-width: 768px) {
@@ -1676,7 +1683,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #faq #faq-list a.collapse {
-  color: #1bb1dc;
+  color: #006eb6;
 }
 
 #faq #faq-list a.collapsed {
