@@ -793,8 +793,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #about .about-img img {
   width: 100%;
-  border: 8px solid #fff;
+  /* border: 8px solid #fff; */
   transition: .5s;
+}
+
+@media (max-width: 767px) {
+  #about .about-img img {
+    width: 65%;
+    align-self: center;
+  }
 }
 
 #about .about-img img:hover {
