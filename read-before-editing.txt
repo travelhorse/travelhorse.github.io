@@ -1,3 +1,0 @@
-Please use the index.html for each section folder as testing/edit environment if needed [last edited 24/7/2020].
-Use the html in the 'en' folder as final to be pushed to s3 bucket.
-To remove the .html extension when pushed to s3 bucket.
