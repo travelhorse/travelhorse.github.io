@@ -856,6 +856,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #1bb1dc;
 }
 
+#team .box {
+  margin: 30px;
+  background-color: transparent;
+}
+
+#team .box:hover {
+  transform: none;
+}
+
 /* Museums / Logistics Section
 --------------------------------*/
 #museums , #logistics, #forms{
