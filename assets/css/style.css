@@ -232,10 +232,10 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.main-nav {
-  /* Drop Down */
-  /* Deep Drop Down */
-}
+/* .main-nav {
+  Drop Down
+  Deep Drop Down
+} */
 
 .main-nav, .main-nav * {
   margin: 2px;
@@ -797,7 +797,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: .5s;
 }
 
-@media (min-width: 100px and max-width: 767px) {
+@media (min-width: 100px) and (max-width: 767px) {
   #about .about-img img {
     width: 65%;
     align-self: center;
@@ -2131,7 +2131,7 @@ h1, h2, h3, h4, h5, h6 {
   }  
 }
 
-#footer .copyright a:hover, , #footer .copyright button:hover {
+#footer .copyright a:hover, #footer .copyright button:hover {
   color: #0a98c0;
 }
 
