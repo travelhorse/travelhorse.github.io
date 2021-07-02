@@ -243,6 +243,11 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
+.nav-icon {
+  height: 15px;
+  vertical-align: text-bottom;
+}
+
 .main-nav > ul > li {
   position: relative;
   white-space: nowrap;
@@ -340,9 +345,16 @@ h1, h2, h3, h4, h5, h6 {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: rgba(40, 38, 70, 0.8);
+  background: white;
   transition: 0.4s;
 }
+
+.mobile-nav .nav-icon {
+  height: 14px;
+  vertical-align: middle;
+  padding-bottom: 2px;;
+}
+
 
 .mobile-nav * {
   margin: 0;
@@ -353,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #065e77;
   padding: 10px 20px;
   font-weight: 500;
 }
@@ -415,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(40, 38, 70, 0.8);
+  /* background: rgba(40, 38, 70, 0.8); */
   overflow: hidden;
   display: none;
 }
