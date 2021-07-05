@@ -244,8 +244,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-icon {
-  height: 15px;
-  vertical-align: text-bottom;
+  height: 25px;
+  vertical-align: middle;
 }
 
 .main-nav > ul > li {
@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav .nav-icon {
-  height: 14px;
+  height: 21px;
   vertical-align: middle;
   padding-bottom: 2px;;
 }
