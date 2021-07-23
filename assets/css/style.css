@@ -811,7 +811,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 100px) and (max-width: 767px) {
   #about .about-img img {
-    width: 65%;
+    /* width: 65%; */
     align-self: center;
   }
 }
