@@ -268,9 +268,9 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   color: #413e66;
-  padding: 10px 15px;
+  padding: 10px 6px;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -1698,7 +1698,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Frequently Asked Questions Section
 --------------------------------*/
 #faq {
-  padding: 60px 0;
+  padding: 60px 0 20px;
   overflow: hidden;
 }
 
