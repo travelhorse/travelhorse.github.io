@@ -219,9 +219,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  padding: 15px 0;
-  margin: 20px 0;
-  max-height: 60px;
+  padding: 15px 0 20px;
+  /* margin: 10px 0; */
+  max-height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #header .logo img {
+    padding: 15px 0;
+    /* margin: 10px 0; */
+    max-height: 65px;
+  }
+  
 }
 
 .main-pages {
@@ -1690,6 +1700,14 @@ h1, h2, h3, h4, h5, h6 {
 #faq {
   padding: 60px 0;
   overflow: hidden;
+}
+
+.faq-header {
+  visibility: visible;
+  animation-name: fadeInUp;
+  background: #2d2b46;
+  padding:85px 0 25px 0;
+  margin-top: 25px;
 }
 
 #faq #faq-list {
